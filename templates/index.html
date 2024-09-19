@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo College</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- College Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="College Logo" style="width: 40px;">
+            Demo College
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Admissions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- College Info Section -->
+            <div class="col-lg-8">
+                <h1>Welcome to Demo College</h1>
+                <p>At Demo College, we provide world-class education in various fields of study, including engineering, business, and the arts. Our mission is to cultivate leaders of tomorrow by providing comprehensive educational programs.</p>
+                <p>Explore our campus, find out about admissions, and learn more about our programs.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+            <!-- Sidebar with College Highlights -->
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Quick Links</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#">Admission Process</a></li>
+                            <li class="list-group-item"><a href="#">Available Courses</a></li>
+                            <li class="list-group-item"><a href="#">Campus Tour</a></li>
+                            <li class="list-group-item"><a href="#">Events and News</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot Icon (Small Circle) -->
+    <div class="chatbot-icon" id="chatbot-icon" onclick="openChatbot()">
+        <img src="{{ url_for('static', filename='img/chatbot-icon.png') }}" alt="Chatbot Icon" style="width: 80px;">
+    </div>
+
+    <!-- Chatbot Popup Window -->
+    <div class="chatbot-popup" id="chatbot-popup">
+        <div class="chatbot-header">
+            <h5>College Chatbot</h5>
+            <button class="close-btn" onclick="closeChatbot()">×</button>
+        </div>
+        <div class="chatbot-body" id="chatbot-body">
+            <div class="chatbot-chat">
+                <img class = "chatbot-icon-img" src="{{ url_for('static', filename='img/chatbot-icon.png') }}" alt="Chatbot Icon" style="width: 50px;">
+                <!-- <strong>Bot:</strong>  -->
+                <div>
+                    Hello! How can I assist you today?
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-footer">
+            <input type="text" id="user-input" placeholder="Type your question here...">
+            <button id="send-btn" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
