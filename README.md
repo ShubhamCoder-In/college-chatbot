@@ -57,7 +57,6 @@ To set up the College Chatbot locally, follow these steps:
   
   Thank you for checking out the College Chatbot! We hope it enhances your college experience! 🎉
 ---
-
 ### Key Features of This README:
 - **Emojis:** They add visual interest and make the sections more engaging.
 - **Clear Sections:** Each part is clearly separated, making it easy to navigate.
