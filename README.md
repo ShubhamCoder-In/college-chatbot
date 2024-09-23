@@ -38,9 +38,10 @@ To set up the College Chatbot locally, follow these steps:
    cd college-chatbot:**
    ```
  3. **Install Required Dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+     ```bash
+     pip install -r requirements.txt
+     ```
+---
 ### Run the Application:
   python app.py  # Replace with the command you use to start your app
   Once the application is running, open your browser and navigate to http://localhost:5000 (or the specified port) to interact with the chatbot.
@@ -55,7 +56,7 @@ To set up the College Chatbot locally, follow these steps:
   For questions, feedback, or further information, please reach out to [your email or GitHub profile link].
   
   Thank you for checking out the College Chatbot! We hope it enhances your college experience! 🎉
-
+---
 
 ### Key Features of This README:
 - **Emojis:** They add visual interest and make the sections more engaging.
